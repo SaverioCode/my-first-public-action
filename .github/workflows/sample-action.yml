@@ -1,7 +1,8 @@
 name: sample action
-
 on: push
-
 jobs:
     hello-world:
         runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4.1.1
